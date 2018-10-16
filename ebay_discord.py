@@ -7,6 +7,7 @@ import random
 from bs4 import BeautifulSoup as soup
 
 bot = commands.Bot(command_prefix='!')
+bot.remove_command('help')
 
 def random_line(fname):
     lines = open(fname).read().splitlines()
