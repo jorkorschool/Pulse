@@ -230,25 +230,25 @@ async def watch(ctx, *args):
                 return
         except IndexError:
             embed = discord.Embed(title="You need to add the number of watchers after the link!", color=0xe74c3c)
-            embed.set_footer(text='Pulse Notify - @k0rnsyrup', icon_url='https://cdn.discordapp.com/attachments/487222109827891201/492206705472438284/5-02.png')
+            embed.set_footer(text='Pulse Notify - @k0rnsyrup', icon_url='https://cdn.discordapp.com/attachments/495080531021529108/512544565677260800/3-03.png')
             await bot.send_message(ctx.message.channel, embed=embed)
             return
 
         embed = discord.Embed(title="Sending {} Watchers...".format(number_of_watchers), color=0xc27c0e)
-        embed.set_footer(text='Pulse Notify - @k0rnsyrup', icon_url='https://cdn.discordapp.com/attachments/487222109827891201/492206705472438284/5-02.png')
+        embed.set_footer(text='Pulse Notify - @k0rnsyrup', icon_url='https://cdn.discordapp.com/attachments/495080531021529108/512544565677260800/3-03.png')
         await bot.send_message(ctx.message.channel, embed=embed)
         bot.send_message(ctx.message.channel, embed=embed)
 
     else:
         embed = discord.Embed(title="Incorrect Link! Link needs to start with www.ebay.com", color=0xe74c3c)
-        embed.set_footer(text='Pulse Notify - @k0rnsyrup', icon_url='https://cdn.discordapp.com/attachments/487222109827891201/492206705472438284/5-02.png')
+        embed.set_footer(text='Pulse Notify - @k0rnsyrup', icon_url='https://cdn.discordapp.com/attachments/495080531021529108/512544565677260800/3-03.png')
         await bot.send_message(ctx.message.channel, embed=embed)
         bot.send_message(ctx.message.channel, embed=embed)
         return
 
     loopityloop(itemlink, number_of_watchers)
-    embed = discord.Embed(title="Successfully Sent {} Watchers!".format(number_of_watchers), color=0x2ecc71)
-    embed.set_footer(text='Pulse Notify - @k0rnsyrup', icon_url='https://cdn.discordapp.com/attachments/487222109827891201/492206705472438284/5-02.png')
+    embed = discord.Embed(title="Successfully Sent {} Watchers!".format(number_of_watchers), color=0x1BA8BE)
+    embed.set_footer(text='Pulse Notify - @k0rnsyrup', icon_url='https://cdn.discordapp.com/attachments/495080531021529108/512544565677260800/3-03.png')
     await bot.send_message(ctx.message.channel, embed=embed)
     #await Mike.delete_message(ctx.message)
     #return await bot.say(mesg[0])
@@ -269,29 +269,29 @@ async def view(ctx, *args):
                 return
         except IndexError:
             embed = discord.Embed(title="You need to add the number of views after the link!", color=0xe74c3c)
-            embed.set_footer(text='Pulse Notify - @k0rnsyrup', icon_url='https://cdn.discordapp.com/attachments/487222109827891201/492206705472438284/5-02.png')
+            embed.set_footer(text='Pulse Notify - @k0rnsyrup', icon_url='https://cdn.discordapp.com/attachments/495080531021529108/512544565677260800/3-03.png')
             await bot.send_message(ctx.message.channel, embed=embed)
             return
         embed = discord.Embed(title="Sending {} Views...".format(number_of_views), color=0xc27c0e)
-        embed.set_footer(text='Pulse Notify - @k0rnsyrup', icon_url='https://cdn.discordapp.com/attachments/487222109827891201/492206705472438284/5-02.png')
+        embed.set_footer(text='Pulse Notify - @k0rnsyrup', icon_url='https://cdn.discordapp.com/attachments/495080531021529108/512544565677260800/3-03.png')
         await bot.send_message(ctx.message.channel, embed=embed)
         bot.send_message(ctx.message.channel, embed=embed)
     else:
         embed = discord.Embed(title="Incorrect Link! Link needs to start with www.ebay.com", color=0xe74c3c)
-        embed.set_footer(text='Pulse Notify - @k0rnsyrup', icon_url='https://cdn.discordapp.com/attachments/487222109827891201/492206705472438284/5-02.png')
+        embed.set_footer(text='Pulse Notify - @k0rnsyrup', icon_url='https://cdn.discordapp.com/attachments/495080531021529108/512544565677260800/3-03.png')
         await bot.send_message(ctx.message.channel, embed=embed)
         bot.send_message(ctx.message.channel, embed=embed)
         return
 
     loopityloop2(itemlink, number_of_views)
-    embed = discord.Embed(title="Successfully Sent {} Views!".format(number_of_views), color=0x2ecc71)
-    embed.set_footer(text='Pulse Notify - @k0rnsyrup', icon_url='https://cdn.discordapp.com/attachments/487222109827891201/492206705472438284/5-02.png')
+    embed = discord.Embed(title="Successfully Sent {} Views!".format(number_of_views), color=0x1BA8BE)
+    embed.set_footer(text='Pulse Notify - @k0rnsyrup', icon_url='https://cdn.discordapp.com/attachments/495080531021529108/512544565677260800/3-03.png')
     await bot.send_message(ctx.message.channel, embed=embed)
 
 @bot.command(pass_context=True)
 async def format(ctx):
     embed = discord.Embed(title='Format:\n\n`!view <ebay link> <# of views desired>` \n`!watch <ebay link> <# of watchers desired>\n\n You are allowed 2 watch commands and 2 view commands per day!`', color=0x3498db)
-    embed.set_footer(text='Pulse Notify - @k0rnsyrup', icon_url='https://cdn.discordapp.com/attachments/487222109827891201/492206705472438284/5-02.png')
+    embed.set_footer(text='Pulse Notify - @k0rnsyrup', icon_url='https://cdn.discordapp.com/attachments/495080531021529108/512544565677260800/3-03.png')
     await bot.send_message(ctx.message.channel, embed=embed)
     bot.send_message(ctx.message.channel, embed=embed)
 
